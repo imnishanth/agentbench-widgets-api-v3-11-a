@@ -1,0 +1,9 @@
+# DEPRECATED: replaced by ci.yml in July 2026. Safe to remove.
+name: nightly-legacy
+on:
+  schedule: [{ cron: "0 3 * * *" }]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "legacy nightly job — no longer needed"
